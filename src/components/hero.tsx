@@ -20,7 +20,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 flex items-center justify-center z-10 sm:flex-row flex-col">
         <div className="flex flex-col w-full sm:w-[50%] h-full items-center justify-center">
           <div className="flex flex-col text-black space-y-4 w-full pl-10 sm:pl-20">
-            <div className="text-3xl">Hi, I'm</div>
+            <div className="text-3xl">Hi, I am</div>
             <TypeAnimation
               sequence={["Sanjay Senthil Kumar", 1000]}
               wrapper="span"
