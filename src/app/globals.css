@@ -14,6 +14,18 @@
   }
 }
 
+@media (min-width: 768px) {
+  .clip-diagonal {
+    clip-path: polygon(0 0, 60% 0, 40% 100%, 0% 100%);
+  }
+}
+
+@media (max-width: 767px) {
+  .clip-diagonal-mobile {
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0% 65%);
+  }
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
