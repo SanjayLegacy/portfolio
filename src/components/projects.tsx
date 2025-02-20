@@ -7,7 +7,6 @@ import React from "../../public/react.svg";
 import ReduxToolkit from "../../public/redux.svg";
 import Tailwind from "../../public/tailwind.svg";
 import TypeScript from "../../public/typescript.svg";
-import JavaScript from "../../public/javascript.svg";
 
 interface ProjectsDataType {
   name: string;
@@ -22,8 +21,9 @@ export default function Projects() {
   const myProjects: ProjectsDataType[] = [
     {
       name: "Rentify",
-      description: "A real estate rental application",
-      techStack: [React, TypeScript, Tailwind, JavaScript, ExpressJS, NeonDB],
+      description:
+        "A real estate rental application, Where It enables property listing, searching with a simple interface. Optimized for smooth navigation and dynamic data handling. Secure authentication ensures reliability for users.",
+      techStack: [React, TypeScript, Tailwind, ReduxToolkit, ExpressJS, NeonDB],
       link: "https://rentify-client-lake.vercel.app/",
       githubClientLink: "https://github.com/SanjayLegacy/rentify-client",
       githubServerLink: "https://github.com/SanjayLegacy/rentify-server",
@@ -31,7 +31,7 @@ export default function Projects() {
     {
       name: "SpaceX",
       description:
-        "SpaceX UI developed using React, Redux Toolkit and Tailwind CSS, for data SpaceX API is used.",
+        "A SpaceX website clone built using its API for data. It showcases launches, rockets, and missions with a dynamic UI. Optimized for speed, responsiveness, and smooth navigation. Provides an interactive experience with live mission tracking.",
       techStack: [React, TypeScript, Tailwind, ReduxToolkit],
       link: "https://spacex-stratforge.vercel.app/",
       githubClientLink: "https://github.com/SanjayLegacy/spacex-stratforge",
@@ -54,10 +54,16 @@ export default function Projects() {
                 key={projectIdx}
                 className="flex flex-col gap-y-2 border border-gray-600 py-2 px-4 rounded-lg"
               >
-                <div className="font-medium text-xl">{project.name}</div>
-                <div className="font-light">{project.description}</div>
-                <div className="font-medium text-lg">Tech Stack</div>
-                <div className="flex flex-row gap-x-6">
+                <div className="font-medium text-xl self-center">
+                  {project.name}
+                </div>
+                <div className="font-light text-justify">
+                  {project.description}
+                </div>
+                <div className="font-medium text-lg self-center">
+                  Tech Stack
+                </div>
+                <div className="flex flex-row gap-x-6 self-center">
                   {project.techStack.map((tech, techIdx) => {
                     return (
                       <Image
@@ -71,12 +77,14 @@ export default function Projects() {
                     );
                   })}
                 </div>
-                <div className="font-medium text-lg">Github</div>
-                <div className="flex flex-row items-center justify-between">
+                <div className="font-medium text-lg self-center">Github</div>
+                <div className="flex flex-row items-center gap-x-8 self-center">
                   <div className="flex flex-row items-center gap-x-8">
                     {project.githubClientLink ? (
                       <Link
                         href={project.githubClientLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex flex-row items-center gap-x-2 hover:scale-110 duration-300"
                       >
                         <Image
@@ -85,12 +93,14 @@ export default function Projects() {
                           width={30}
                           height={30}
                         />
-                        <div>Client</div>
+                        <div>Frontend</div>
                       </Link>
                     ) : null}
                     {project.githubServerLink ? (
                       <Link
                         href={project.githubServerLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex flex-row items-center gap-x-2 hover:scale-110 duration-300"
                       >
                         <Image
@@ -99,12 +109,14 @@ export default function Projects() {
                           width={30}
                           height={30}
                         />
-                        <div>Server</div>
+                        <div>Backend</div>
                       </Link>
                     ) : null}
                   </div>
                   <Link
                     href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-blue-500 hover:underline w-fit"
                   >
                     Visit

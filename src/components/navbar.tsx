@@ -21,7 +21,9 @@ export default function NavBar() {
       }`}
     >
       <nav className="relative z-50 flex flex-row justify-center gap-x-8">
-        <Link href="#about-me">About me</Link>
+        <Link href="#about-me" className="line-clamp-1">
+          About me
+        </Link>
         <Link href="#experience">Experience</Link>
         <Link href="#skills">Skills</Link>
         <Link href="#projects">Projects</Link>

@@ -20,7 +20,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 flex items-center justify-center z-10 sm:flex-row flex-col">
         <div className="flex flex-col w-full sm:w-[50%] h-full items-center justify-center">
           <div className="flex flex-col text-black space-y-4 w-full pl-10 sm:pl-20">
-            <div className="text-3xl">Hi, I am</div>
+            <div className="text-3xl">{"Hi, I'm"}</div>
             <TypeAnimation
               sequence={["Sanjay Senthil Kumar", 1000]}
               wrapper="span"
@@ -28,9 +28,7 @@ export default function HeroSection() {
               className="font-medium text-transparent text-6xl bg-clip-text bg-gradient-to-r from-gray-800 to-gray-400"
               repeat={Infinity}
             />
-            <div className="text-2xl text-gray-600">
-              Front End Developer / UI Engineer
-            </div>
+            <div className="text-2xl text-gray-600">Front End Developer</div>
             <div className="flex flex-row gap-x-4">
               <SocialIcon
                 target="_blank"
