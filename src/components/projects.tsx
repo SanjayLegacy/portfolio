@@ -63,7 +63,7 @@ export default function Projects() {
                 <div className="font-medium text-lg self-center">
                   Tech Stack
                 </div>
-                <div className="flex flex-row gap-x-6 self-center">
+                <div className="flex flex-row gap-x-6 gap-y-4 justify-center flex-wrap">
                   {project.techStack.map((tech, techIdx) => {
                     return (
                       <Image
@@ -78,7 +78,7 @@ export default function Projects() {
                   })}
                 </div>
                 <div className="font-medium text-lg self-center">Github</div>
-                <div className="flex flex-row items-center gap-x-8 self-center">
+                <div className="flex flex-row items-center justify-center gap-x-8 gap-y-4 flex-wrap">
                   <div className="flex flex-row items-center gap-x-8">
                     {project.githubClientLink ? (
                       <Link
@@ -117,9 +117,16 @@ export default function Projects() {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-500 hover:underline w-fit"
+                    className="flex flex-row items-center gap-x-2 group"
                   >
-                    Visit
+                    <span className="relative flex size-2.5">
+                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+                      <span className="relative inline-flex size-2.5 rounded-full bg-green-500"></span>
+                    </span>
+
+                    <div className="text-blue-500 group-hover:underline w-fit">
+                      Live demo
+                    </div>
                   </Link>
                 </div>
               </div>
