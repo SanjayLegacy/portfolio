@@ -122,19 +122,18 @@ export default function Skills() {
   return (
     <div
       id="skills"
-      className="p-4 flex flex-col justify-center items-center bg-gray-300 gap-y-8"
+      className="p-4 flex flex-col justify-center items-center bg-gray-300 gap-y-8 pt-16"
     >
       <div className="text-xl sm:text-2xl text-black font-semibold border-4 border-black p-2">
         Skills
       </div>
-      {/* <div className="flex flex-row flex-wrap gap-x-8 gap-y-4 sm:w-[50%] w-[90%] justify-center items-baseline"> */}
       <div className="sm:w-[50%] w-[90%] grid grid-cols-2 sm:grid-cols-4 justify-center items-baseline gap-8">
         {mySkills.map((skill, idx) => (
           <div
             key={idx}
             className="flex flex-col items-center justify-center gap-y-4 hover:scale-110 duration-300"
           >
-            <Image src={skill.logo} alt={skill.name} width={50} height={50} />
+            <Image src={skill.logo} alt={skill.name} width={80} height={80} />
             <div className="text-base text-black">{skill.name}</div>
           </div>
         ))}

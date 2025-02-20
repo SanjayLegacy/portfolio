@@ -54,7 +54,7 @@ export default function Experience() {
   return (
     <div
       id="experience"
-      className="p-4 flex flex-col justify-center items-center bg-gray-300 gap-y-8"
+      className="p-4 flex flex-col justify-center items-center bg-gray-300 gap-y-8 pt-16"
     >
       <div className="text-xl sm:text-2xl text-black font-semibold border-4 border-black p-2">
         Experience
