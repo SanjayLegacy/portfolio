@@ -52,8 +52,8 @@ export default function HeroSection() {
             />
           </div>
         </div>
-        <div className="w-full sm:w-[50%] h-full overflow-hidden">
-          <Image src={profilePic} alt="Sanjay" />
+        <div className="w-full sm:w-[50%] h-full overflow-hidden flex justify-center">
+          <Image src={profilePic} alt="Sanjay" className="h-full w-fit" />
         </div>
       </div>
     </div>
