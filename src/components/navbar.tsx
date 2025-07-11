@@ -33,6 +33,7 @@ export default function NavBar() {
     >
       <nav className="hidden md:flex relative z-50 flex-row justify-center gap-x-8">
         <Link href="#about-me">About me</Link>
+        <Link href="#education">Education</Link>
         <Link href="#experience">Experience</Link>
         <Link href="#skills">Skills</Link>
         <Link href="#projects">Projects</Link>
@@ -57,6 +58,13 @@ export default function NavBar() {
             onClick={toggleMenu}
           >
             About me
+          </Link>
+          <Link
+            href="#education"
+            className="block py-2 px-4"
+            onClick={toggleMenu}
+          >
+            Education
           </Link>
           <Link
             href="#experience"

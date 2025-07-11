@@ -10,9 +10,9 @@ export default function AboutMe() {
       <div className="text-lg text-black font-light sm:w-[70%] w-[90%] text-justify">
         Front-end engineer with expertise in ReactJS, optimizing performance and
         user experience. Proven track record in building analytics platforms,
-        tracking systems, and video conferencing apps. Skilled in JavaScript,
-        TypeScript, and modern web technologies. Passionate about creating
-        efficient and scalable solutions for complex problems.
+        tracking systems, and video conferencing applications. Skilled in
+        JavaScript, TypeScript, and modern web technologies. Passionate about
+        crafting efficient and scalable solutions for complex problems.
       </div>
     </div>
   );

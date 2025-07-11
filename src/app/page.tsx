@@ -1,4 +1,5 @@
 import AboutMe from "@/components/about-me";
+import Education from "@/components/education";
 import Experience from "@/components/experience";
 import Footer from "@/components/footer";
 import HeroSection from "@/components/hero";
@@ -12,6 +13,7 @@ export default function Home() {
       <NavBar />
       <HeroSection />
       <AboutMe />
+      <Education />
       <Experience />
       <Skills />
       <Projects />

@@ -3,6 +3,7 @@ import Bitbucket from "../../public/bitbucket.svg";
 import Dart from "../../public/dart.svg";
 import ExpressJS from "../../public/express.svg";
 import Figma from "../../public/figma.svg";
+import Firebase from "../../public/firebase.svg";
 import Flutter from "../../public/flutter.svg";
 import Git from "../../public/git.svg";
 import GitHub from "../../public/github.svg";
@@ -76,6 +77,10 @@ export default function Skills() {
     {
       name: "GitHub",
       logo: GitHub,
+    },
+    {
+      name: "Firebase",
+      logo: Firebase,
     },
     {
       name: "Jira",
